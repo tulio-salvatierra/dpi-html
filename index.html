@@ -1,1 +1,153 @@
-<h1>This is my homepage</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- where we tell the browser how to process the document: -->
+  <!-- what title to put in the browser tab -->
+  <style>
+    html body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(135deg, #284579, #4bc3ad);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      font-family: "Mulish";
+      font-size: 1.25rem;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      box-shadow: 3px 14px 74px 31px rgba(0, 0, 0, 0.1);
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .name {
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a {
+      color: #fffffe;
+      text-decoration: none;
+    }
+
+    .link {
+      background: rgba(248, 231, 28, 0.55);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border-radius: 2rem;
+      box-shadow: 3px 14px 74px 31px rgba(0, 0, 0, 0.1);
+    }
+
+    .link a {
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f5528538f.js" crossorigin="anonymous"></script>
+  <!-- what language to use -->
+  <!-- we will always use a character set called UTF-8 -->
+  <!-- UTF-8 allows for all languages as well as things like emoji -->
+</head>
+
+<body>
+  <div class="items">
+    <div class="banner">
+      <img src="./thumbnails/profile-pic.jpg" alt="Tulio Salvatierra profile" class="banner-image">
+    </div>
+
+    <h1 class="name">
+      Tulio Salvatierra
+    </h1>
+
+    <div class="social-icons">
+      <a href="https://github.com/T00lio" target="_blank">
+        <i class="fa-brands fa-github fa-1x"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/tulio-salvatierra/" target="_blank">
+        <i class="fa-brands fa-linkedin-in fa-1x"></i>
+      </a>
+
+      <a href="https://www.instagram.com/tulio_dev/" target="_blank">
+        <i class="fa-brands fa-instagram fa-1x"></i>
+      </a>
+
+      <a href="https://twitter.com/user_name_tulio" target="_blank">
+        <span class="fa-brands fa-square-twitter fa-1x"></span>
+      </a>
+    </div>
+
+    <div class="link">
+      <img class="thumbnail" src="./thumbnails/image.png ">
+
+      <a target="_blank" href="https://tuliosalvatierra.com">Web development portfolio</a>
+    </div>
+
+    <div class="link">
+      <img class="thumbnail" src="./thumbnails/band thumb.png">
+
+      <a target="_blank" href="https://www.instagram.com/wratheonofficial/">Wratheon: Blackend Trash metal from Chicago,
+        IL</a>
+    </div>
+
+    <div class="link">
+      <img class="thumbnail" 
+        src="./thumbnails/up.png">
+
+      <a target="_blank" href="https://www.upwork.com/freelancers/tulio">A
+        My freelancer website @ upwork.com</a>
+    </div>
+  </div>
+
+  <!-- Etc, for as many links as you want -->
+</body>
+
+</html>
